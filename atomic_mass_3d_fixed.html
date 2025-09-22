@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Massa Rata-rata Atom - Animasi 3D Enhanced</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <style>
+        body { margin: 0; overflow: hidden; background: #000033; }
+        canvas { display: block; }
+    </style>
+</head>
+<body>
+    <div id="loading">Memuat Simulasi Atom...</div>
+    <div id="container">
+        <canvas id="canvas3d"></canvas>
+    </div>
+
+    <!-- Script utama -->
+    <script>
+        // Cek apakah THREE.js berhasil dimuat
+        if (typeof THREE === "undefined") {
+            document.body.innerHTML = "<h2 style='color:white; text-align:center; margin-top:20%;'>⚠️ Gagal memuat Three.js. Pastikan koneksi internet stabil.</h2>";
+        }
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+</body>
+</html>
